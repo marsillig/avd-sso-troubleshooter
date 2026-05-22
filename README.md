@@ -23,6 +23,27 @@ The scripts do **not** change Azure, Microsoft Entra ID, the host pool, or the V
 | `Test-AvdSsoSessionHost.ps1` | Run inside an AVD session host VM to inspect join state, AVD agent services, event logs, and endpoint reachability. |
 | `Invoke-AvdSsoTroubleshooter.ps1` | Convenience wrapper for cloud-side or session-host mode. |
 
+
+## Download with curl
+
+Download all scripts from the public repository into the current folder:
+
+```bash
+curl -L -O https://raw.githubusercontent.com/marsillig/avd-sso-troubleshooter/main/Test-AvdSsoCloud.ps1
+curl -L -O https://raw.githubusercontent.com/marsillig/avd-sso-troubleshooter/main/Test-AvdSsoSessionHost.ps1
+curl -L -O https://raw.githubusercontent.com/marsillig/avd-sso-troubleshooter/main/Invoke-AvdSsoTroubleshooter.ps1
+```
+
+From PowerShell, the same commands work with `curl.exe`:
+
+```powershell
+curl.exe -L -O https://raw.githubusercontent.com/marsillig/avd-sso-troubleshooter/main/Test-AvdSsoCloud.ps1
+curl.exe -L -O https://raw.githubusercontent.com/marsillig/avd-sso-troubleshooter/main/Test-AvdSsoSessionHost.ps1
+curl.exe -L -O https://raw.githubusercontent.com/marsillig/avd-sso-troubleshooter/main/Invoke-AvdSsoTroubleshooter.ps1
+```
+
+Then run the relevant script from the download folder.
+
 ## Quick start: cloud-side check
 
 Run this from Azure Cloud Shell or a workstation with Az PowerShell installed.
