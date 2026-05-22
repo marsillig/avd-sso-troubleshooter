@@ -1,0 +1,12 @@
+# Generated diagnostic reports
+avd-sso-*.json
+avd-sso-*.md
+
+# PowerShell transcripts/logs
+PowerShell_transcript*.txt
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
